@@ -20,7 +20,7 @@
     height: 100%;
     width: calc(100% / 3);
 
-    background-image: url("/Materiale/ydelser.jpg");
+    background-image: url("../Materiale/ydelser.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;

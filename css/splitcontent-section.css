@@ -16,7 +16,7 @@
     height: 50em;
     width: 100%;
 
-    background-image: url("/Materiale/splitsektion-1.jpg");
+    background-image: url("../Materiale/splitsektion-1.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -63,7 +63,7 @@
     .splitContent {
         padding: 0 2em;
 
-        background-image: url("/Materiale/splitsektion-1.jpg");
+        background-image: url("../Materiale/splitsektion-1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -80,7 +80,7 @@
         height: 30em;
         /* width: 50em; */
     
-        background-image: url("/Materiale/splitsektion-1.jpg");
+        background-image: url("../Materiale/splitsektion-1.jpg");
         background-repeat: no-repeat;
         background-position: center; 
         background-size: cover;
