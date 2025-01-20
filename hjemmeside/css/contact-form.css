@@ -1,0 +1,124 @@
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+    --main-color-yellow: #f8dd9f;
+}
+
+.contactForm {
+    display: flex;
+    align-items: center;
+
+    padding: 0 10em;
+    min-height: 70vh;
+    width: 100vw;
+    
+    background-color: var(--main-color-yellow);
+}
+
+.contactForm__body_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    width: 100%;
+    margin-bottom: 8em;
+}
+
+.contactForm__title {
+    font-size: 5em;
+    color: var(--main-color-black);
+}
+
+.contactForm__text1 {
+    display: block;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    color: var(--main-color-black);
+}
+
+.contactForm__text2, .contactForm__text3 {
+    display: block;
+    color: var(--main-color-black);
+}
+
+/* form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.form > input, textarea {
+    padding: 1em;
+    border-style: none;
+    border-radius: 8px;
+    color: var(--main-color-black);
+
+}
+
+.form__button_container {
+    display: flex;
+    justify-content: end;
+}
+
+.form__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3em;
+    width: 12em;
+    border-radius: 8px;
+    border-style: none;
+
+
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    color: var(--main-color-white);
+    background-color: var(--main-color-black);
+}
+
+/* SCREEN ================================================== */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .contactForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 2em;
+    }
+
+    .contactForm__title {
+        font-size: 3em;
+        color: var(--main-color-black);
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .contactForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        padding: 4em 10em;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .contactForm {
+        padding: 4em 10em;
+    }
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+
+}

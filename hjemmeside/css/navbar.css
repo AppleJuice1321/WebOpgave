@@ -1,0 +1,226 @@
+/* color sheme */
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+}
+
+/* NAVBAR ================================================= */
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 6em;
+    width: 100vw;
+}
+
+.navbar--phone__screen {
+    padding: 0 2em;
+}
+
+/* logo */
+.navbar__logo_container {
+    height: 3em;
+    width: 3em;
+}
+
+.navbar__logo {
+    display: block;
+    object-fit: contain;
+
+    height: 100%;
+    width: 100%;
+}
+
+/* navbar container */
+.navbar__list__container--hidden {
+    display: none;
+}
+
+/* booking button */
+.navbar__button_booking {
+    border-style: none;
+    text-transform: uppercase;
+
+    border-radius: .5em;
+    padding: .5em 1.5em;
+
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+}
+
+/* BURGERMENU ================================================= */
+.burgermenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+
+    border-radius: .5em;
+    padding: .6em;
+    background-color: transparent;
+}
+
+
+/* burgermenu links */
+.burgermenu__navbar__list__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    top: 3em;
+    left: 0;
+    width: 100vw;
+    font-size: 2em;
+
+    background-color: var(--main-color-white);
+}
+
+.burgermenu__navbar__list__container--hidden {
+    display: none;
+}
+
+.burgermenu__navbar__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.burgermenu__navbar__list_item {
+    text-align: center;
+    text-decoration: none;
+
+    padding: 1em;
+    font-size: .5em;
+    height: 100%;
+    width: 100%;
+
+    color: var(--main-color-black);
+}
+
+/* SCREEN ================================================= */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .navbar__list__container {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .navbar--tablet__screen {
+        padding: 0 4em;
+    }
+
+    .navbar__list__container {
+        display: none;
+    }
+
+    .burgermenu__navbar__list__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+
+        padding: 0 2em;
+    }
+
+    .burgermenu__navbar__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+    
+    .burgermenu__navbar__list_item {
+        font-size: .6em;
+    }
+
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .navbar--laptop__screen {
+        padding: 0 5em;
+    }
+
+    .navbar__logo_container {
+        height: 6em;
+        width: 6em;
+    }
+    
+    .navbar__button_booking {
+        padding: 1em 3em;
+        font-size: 1em;
+    }
+
+    .burgermenu, .burgermenu__navbar__list__container {
+        display: none;
+    }
+
+    .navbar__list__container {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        height: 100%;
+    }
+
+    .navbar__list {
+        list-style: none;
+    }
+
+    .navbar__list_item {
+        text-decoration: none;
+        font: 3em;
+        padding: 2em;
+        color: var(--main-color-black);
+    }
+    
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+    .navbar--desktop__screen {
+        padding: 0 10em;
+    }
+
+    .navbar__logo_container {
+        height: 6em;
+        width: 6em;
+    }
+
+    .navbar__button_booking {
+        padding: 1em 3em;
+        font-size: 1em;
+    }
+
+    .burgermenu, .burgermenu__navbar__list__container {
+        display: none;
+    }
+
+    .navbar__list__container {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        height: 100%;   
+    }
+
+    .navbar__list {
+        list-style: none;
+    }
+
+    .navbar__list_item {
+        text-decoration: none;
+        font: 3em;
+        padding: 2em;
+        font-size: 1.2em;
+        color: var(--main-color-black);
+    }
+    
+}

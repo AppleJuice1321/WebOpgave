@@ -1,0 +1,83 @@
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("/Materiale/topbillede.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.heroSection__body_container {
+    max-width: 60em;
+}
+
+.heroSection__title {
+    font-size: 5em;
+    color: var(--main-color-white);
+}
+
+.heroSection__text {
+    margin-bottom: 1em;
+    
+    font-size: 2em;
+    color: var(--main-color-white);
+
+}
+
+/* SCREEN ================================================= */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .heroSection {
+        padding: 0 2em;
+    }
+
+    .heroSection__title {
+        font-size: 2.8em;
+    }
+
+    .heroSection__text {
+        font-size: 1.5em
+    
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .heroSection {
+        padding: 0 4em;
+    }
+
+    .heroSection__title {
+        font-size: 3.2em;
+    }
+
+    .heroSection__text {
+        font-size: 1.7em
+    
+    }
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .heroSection {
+        padding: 0 5em;
+    }
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+    .heroSection {
+        padding: 0 10em;
+    }
+}

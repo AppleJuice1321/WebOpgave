@@ -1,0 +1,102 @@
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+}
+
+.splitContent {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.splitContent__img {
+    height: 50em;
+    width: 100%;
+
+    background-image: url("/Materiale/splitsektion-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.splitContent__body_container {
+    width: 100%;
+}
+
+.splitContent__title {
+    font-size: 3em;
+    color: var(--main-color-black);
+}
+
+.splitContent__text {
+    color: var(--main-color-black);
+}
+
+.splitContent__oneliner {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: var(--main-color-black);
+}
+
+.button_contacting {
+    border-style: none;
+    text-transform: uppercase;
+
+    border-radius: .5em;
+    padding: .5em 1.5em;
+
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+}
+
+/* SCREEN ================================================== */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .splitContent__img {
+        display: none;
+    }
+
+    .splitContent {
+        padding: 0 2em;
+
+        background-image: url("/Materiale/splitsektion-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .splitContent {
+        padding: 0 4em;        
+    }
+
+    .splitContent__img {
+        height: 30em;
+        /* width: 50em; */
+    
+        background-image: url("/Materiale/splitsektion-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .splitContent {
+        padding: 0 5em;        
+    }
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+    .splitContent {
+        padding: 0 10em;
+    }
+}

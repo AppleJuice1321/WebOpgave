@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+    --main-color-yellow: #f8dd9f;
+}
+
+header {
+    background-color: var(--main-color-white);
+}

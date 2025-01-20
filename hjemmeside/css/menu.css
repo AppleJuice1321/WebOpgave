@@ -1,0 +1,101 @@
+:root {
+    --main-color-white: #ffffff;
+}
+
+.menu {
+    display: flex;
+    
+    height: 80vh;
+    width: 100vw;
+
+    font-size: 5em;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    height: 100%;
+    width: calc(100% / 3);
+
+    background-image: url("/Materiale/ydelser.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    color: var(--main-color-white);
+}
+
+.img-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    height: 100%;
+    width: calc(100% / 3);
+
+    background-image: url("/Materiale/service.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    color: var(--main-color-white);
+}
+
+.img-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    height: 100%;
+    width: calc(100% / 3);
+
+    background-image: url("/Materiale/kontaktos.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    color: var(--main-color-white);
+}
+
+/* SCREEN ================================================== */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3em;
+    }
+
+    .img-1, .img-2, .img-3 {
+        width: 100%;
+        height: calc(100% / 3);
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-1, .img-2, .img-3 {
+        width: 100%;
+        height: calc(100% / 3);
+    }
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+
+}

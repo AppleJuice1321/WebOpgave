@@ -1,0 +1,100 @@
+:root {
+    --main-color-black: #000000;
+    --main-color-white: #ffffff;
+}
+
+.splitContent2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 4em;
+
+    padding: 0 10em;
+    height: 100vh;
+    width: 100vw;
+}
+
+.splitContent2__img {
+    height: 70%;
+    width: 100%;
+
+    background-image: url("/Materiale/splitsektion-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.splitContent2__body_container {
+    width: 100%;
+}
+
+.splitContent2__title {
+    font-size: 3em;
+    color: var(--main-color-black);
+}
+
+.splitContent2__text {
+    color: var(--main-color-black);
+}
+
+.splitContent2__oneliner {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/* SCREEN ================================================== */
+/* phone */
+@media (min-width: 300px) and (max-width: 649px) {
+    .splitContent2__img {
+        display: none;
+    }
+
+    .splitContent2 {
+        padding: 0 2em;
+
+        background-image: url("/Materiale/splitsektion-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .splitContent2__title {
+        font-size: 3em;
+        color: var(--main-color-white);
+    }
+    
+    .splitContent2__text {
+        color: var(--main-color-white);
+    }
+
+    .splitContent2__oneliner {
+        color: var(--main-color-white);
+    }
+
+    .button_contacting {
+        background-color: var(--main-color-white);
+        color: var(--main-color-black);
+    }
+}
+
+/* Tablet */
+@media (min-width: 650px) and (max-width: 1399px) {
+    .splitContent2 {
+        padding: 0 4em;        
+    }
+}
+
+/* Laptop */
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .splitContent2 {
+        padding: 0 5em;        
+    }
+}
+
+/* Desktop */
+@media ((min-width: 1800px) and (max-width: 3000px)) {
+    .splitContent2 {
+        padding: 0 10em;
+    }
+}
