@@ -29,6 +29,7 @@
 .contentSection__title {
     font-size: 3em;
     color: var(--main-color-black);
+    font-family: "DM Serif Display", serif;
 }
 
 .contentSection__text {

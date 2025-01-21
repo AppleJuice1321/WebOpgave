@@ -27,6 +27,7 @@
 .contactForm__title {
     font-size: 5em;
     color: var(--main-color-black);
+    font-family: "DM Serif Display", serif;
 }
 
 .contactForm__text1 {

@@ -10,6 +10,11 @@
     --main-color-yellow: #f8dd9f;
 }
 
+body {
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
 header {
     background-color: var(--main-color-white);
 }

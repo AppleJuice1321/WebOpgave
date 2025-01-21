@@ -25,6 +25,7 @@
 .heroSection__title {
     font-size: 5em;
     color: var(--main-color-white);
+    font-family: "DM Serif Display", serif;
 }
 
 .heroSection__text {
@@ -33,6 +34,17 @@
     font-size: 2em;
     color: var(--main-color-white);
 
+}
+
+.hero__button {
+    border-style: none;
+    text-transform: uppercase;
+
+    border-radius: .5em;
+    padding: .5em 1.5em;
+
+    background-color: var(--main-color-white);
+    color: var(--main-color-black);
 }
 
 /* SCREEN ================================================= */

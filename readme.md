@@ -26,6 +26,3 @@ evt. freestyling:
 
 # Teknolgier
 HTML & CSS
-
-# Dokumentation
-

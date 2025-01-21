@@ -33,6 +33,7 @@
 
 .splitContent__text {
     color: var(--main-color-black);
+    font-family: "DM Serif Display", serif;
 }
 
 .splitContent__oneliner {
